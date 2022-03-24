@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+    <!-- <h3>Calculator</h3> -->
+    <div class="calculator">
+        <div class="calculator_output">
+            <input type="text" placeholder="0" readonly class="calculator_display">
+        </div>
+        <div class="keys">
+            <div class="first-row">
+                <button class="key key_clear" onclick="clearDisplay()">AC</button>
+                <button class="key key_sign" onclick="changeSign()">+/-</button>
+                <button class="key key_percent" onclick="percent()">%</button>
+                <button class="key key_divide" onclick="divide()">/</button>
+            </div>
+            <div class="second-row">
+                <button class="key key_7" onclick="addDigit(7)">7</button>
+                <button class="key key_8" onclick="addDigit(8)">8</button>
+                <button class="key key_9" onclick="addDigit(9)">9</button>
+                <button class="key key_multiply" onclick="multiply()">*</button>
+            </div>
+            <div class="third-row">
+                <button class="key key_4" onclick="addDigit(4)">4</button>
+                <button class="key key_5" onclick="addDigit(5)">5</button>
+                <button class="key key_6" onclick="addDigit(6)">6</button>
+                <button class="key key_subtract" onclick="subtract()">-</button>
+            </div>
+            <div class="fourth-row">
+                <button class="key key_1" onclick="addDigit(1)">1</button>
+                <button class="key key_2" onclick="addDigit(2)">2</button>
+                <button class="key key_3" onclick="addDigit(3)">3</button>
+                <button class="key key_add" onclick="add()">+</button>
+            </div>
+            <div class="fifth-row">
+                <button class="key key_dot" onclick="addDot()">.</button>
+                <button class="key key_0" onclick="addDigit(0)">0</button>
+                <button class="key key_equals" onclick="equals()">=</button>
+                <button class="key backspace" onclick="backspace()">Del</button>
+            </div>
+        </div>
+        <div class="calculator_head">
+            <h3 title="calculator">Calculator</h3>
+        </div>
+    </div>
+</div>
+</body>
+</html>
